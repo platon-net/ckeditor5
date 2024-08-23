@@ -1,6 +1,6 @@
 {
   "name": "ckeditor5-platon",
-  "version": "43.0.2",
+  "version": "43.0.3",
   "description": "The development environment of CKEditor 5 - the best browser-based rich text editor.",
   "private": false,
   "keywords": [
@@ -74,7 +74,6 @@
   },
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
-  "type": "module",
   "homepage": "https://ckeditor.com/ckeditor-5",
   "bugs": "https://github.com/igorplaton/ckeditor5/issues",
   "repository": {
