@@ -1,8 +1,8 @@
 {
-  "name": "ckeditor5",
+  "name": "ckeditor5-platon",
   "version": "43.0.0",
   "description": "The development environment of CKEditor 5 - the best browser-based rich text editor.",
-  "private": true,
+  "private": false,
   "keywords": [
     "ckeditor",
     "ckeditor5",
@@ -160,7 +160,7 @@
     "terser-webpack-plugin": "^4.2.3",
     "typescript": "5.0.4",
     "umberto": "^4.2.6",
-    "upath": "^2.0.0",
+    "upath": "^2.0.1",
     "wait-on": "^6.0.1",
     "webpack": "^5.58.1"
   },
@@ -170,10 +170,10 @@
   "author": "CKSource (http://cksource.com/)",
   "license": "GPL-2.0-or-later",
   "homepage": "https://ckeditor.com/ckeditor-5",
-  "bugs": "https://github.com/ckeditor/ckeditor5/issues",
+  "bugs": "https://github.com/igorplaton/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git"
+    "url": "https://github.com/igorplaton/ckeditor5.git"
   },
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
