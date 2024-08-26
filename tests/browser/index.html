@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
+Copyright (c) 2024, Platon Technologies s.r.o. All rights reserved.
+For licensing, see LICENSE.md or helpdesk@platon.sk or http://ckeditor.com/license
+-->
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Markdown editor</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="demo.css" />
+		<link rel="stylesheet" href="content.css" />
+	</head>
+
+	<body>
+		<div class="header-wrapper">
+			<h1>Markdown editor</h1>
+		</div>
+
+<form action="save.php" method="post">
+
+		<div class="editor-wrapper">
+			<textarea name="content" id="UpdateContent">
+
+				<p>
+					<strong>toto je tucny text</strong> a <i>toto je sikmi text </i>dalej
+				</p>
+				<ol>
+					<li>
+						zoznam
+					</li>
+					<li>
+						druhy
+					</li>
+					<li>
+						treti
+					</li>
+				</ol>
+				<p>
+					<code>toto je jednorkadkovy kod</code>
+				</p>
+				<p>
+					a teraz viacriadkovy
+				</p>
+				<pre><code class="language-css">prvy
+				druhy
+				treti riadok</code></pre>
+
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quod nemo aliquid officiis ullam nostrum doloribus,
+				</p>
+				<p>
+					cum error ducimus laborum quos atque est, ad odio consectetur voluptates facilis itaque tempore.
+				</p>
+			</textarea>
+		</div>
+
+<input type="submit" value="Odoslat">
+
+</form>
+
+
+		<script src="dist/main.js?11"></script>
+		<script>
+			window.onload = function() {
+				console.log('window.onload => CKEDITOR initialize');
+				CKEDITOR.replace('content');
+			}
+		</script>
+	</body>
+</html>

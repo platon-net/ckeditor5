@@ -130,13 +130,13 @@ export default class Autoformat extends Plugin {
 			const codeCallback = getCallbackFunctionForInlineAutoformat( this.editor, 'code' );
 
 			//inlineAutoformatEditing( this.editor, this, /(')([^']+)(')$/g, codeCallback );
-			inlineAutoformatEditing( this.editor, this, /(\`\`)([^`]+)(\`\`)$/g, codeCallback );
+			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\`\`)([^`]+)(\`\`)$/g, codeCallback );
 		}
 
 		if ( commands.get( 'tt' ) ) {
 			const ttCallback = getCallbackFunctionForInlineAutoformat( this.editor, 'tt' );
 
-			inlineAutoformatEditing( this.editor, this, /(`)([^`]+)(`)$/g, ttCallback );
+			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(`)([^`]+)(`)$/g, ttCallback );
 		}
 
 		if ( commands.get( 'strikethrough' ) ) {

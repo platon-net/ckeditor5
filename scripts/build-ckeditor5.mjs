@@ -8,6 +8,7 @@
 /* eslint-env node */
 
 import { rm, copyFile } from 'fs/promises';
+import { readFileSync, writeFileSync } from 'fs';
 import upath from 'upath';
 import chalk from 'chalk';
 import { build } from '@ckeditor/ckeditor5-dev-build-tools';
@@ -23,6 +24,9 @@ function dist( path ) {
 	 */
 	const tsconfig = 'tsconfig.dist.ckeditor5.json';
 	const banner = 'scripts/banner.mjs';
+	const packageJson = JSON.parse(readFileSync( dist('../package.json'), 'utf8'));
+	console.log( chalk.yellow('Current version is '+packageJson.version) );
+	writeFileSync (dist( 'ckeditor5.js' ), `console.log("CKeditor-Platon: ${packageJson.version}");`, {flag: 'a+'});
 
 	/**
 	 * Step 1
@@ -68,6 +72,8 @@ function dist( path ) {
 	await copyFile( dist( 'tmp/ckeditor5.js.map' ), dist( 'ckeditor5.js.map' ) );
 	await rm( dist( 'tmp' ), { recursive: true } );
 
+	writeFileSync (dist( 'ckeditor5.js' ), `console.log("CKeditor-Platon: ${packageJson.version}");`, {flag: 'a+'});
+
 	/**
 	 * Step 3
 	 */
@@ -83,4 +89,7 @@ function dist( path ) {
 		name: 'CKEDITOR',
 		external: []
 	} );
+
+	writeFileSync (dist( 'browser/ckeditor5.js' ), `console.log("CKeditor-Platon: ${packageJson.version}");`, {flag: 'a+'});
+
 } )();
