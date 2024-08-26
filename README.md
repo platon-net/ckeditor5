@@ -40,20 +40,23 @@ Refer to the [Quick Start](https://ckeditor.com/docs/ckeditor5/latest/getting-st
 
 First steps for build and using.
 
-### First build and install required modules
+### First install required modules and building
 1. Download or clone GIT repository
 2. Install `nodejs` and `npm`
-3. Choose root directory of repository and run `npm install`
-4. Choose directory `tests/browser` and run `npm install`
-5. Super, you get compiled CKeditor5 in one file `test/browser/dist/main.js`
+3. Choose root directory of repository and run `npm install` and then `npm run build:dist` for build package in TypeScript
+4. Choose directory `tests/browser/` and run `npm install` and then `npm run build` for compile to Javascript
+5. Super, you get compiled CKeditor5 in one file `tests/browser/dist/main.js`
 6. Create new HTML file and include `main.js`, for example see `test/browser/index.html`
 
-### New changes
-1. All code is in directory `packages`, it is writed in TypeScript
+### New changes and upgrade
+1. All code of CKeditor is in directory `packages/`, the code is written in TypeScript
 2. Upgrade version of package in `package.json`
-3. After changes run in root directory `npm run build:dist`
-4. After build package choose directory `test/browser` and run `npm run build`
-5. Super, you get compiled CKeditor5 in one file `test/browser/dist/main.js`
+3. After changes run in root directory `npm run build:dist` for build package in TypeScript
+4. After build package choose directory `tests/browser/`
+5. Code for using CKeditor as instance in browser is in file `tests/browser/index.js`
+6. After rebuild package or any changes in `tests/browser/` run `npm run build` for compile to Javascript
+7. Super, you get compiled CKeditor5 in one file `tests/browser/dist/main.js`
+8. Don't forget to commit code changes
 
 
 ### CKEditor&nbsp;5 Builder
