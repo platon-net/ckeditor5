@@ -11,6 +11,7 @@ export { default as Bold } from './bold.js';
 export { default as BoldEditing } from './bold/boldediting.js';
 export { default as BoldUI } from './bold/boldui.js';
 export { default as Code } from './code.js';
+export { default as Tt } from './tt.js';
 export { default as CodeEditing } from './code/codeediting.js';
 export { default as CodeUI } from './code/codeui.js';
 export { default as Italic } from './italic.js';

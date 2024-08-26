@@ -1,11 +1,12 @@
 /**
- * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * @license Copyright (c) 2024, Platon Technologies. All rights reserved.
+ * For licensing helpdesk@platon.sk
  */
 
 export const banner =
 `/**
- * @license Copyright (c) 2003-${ new Date().getFullYear() }, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+ * @license Copyright (c) 2024-${ new Date().getFullYear() }, Platon Technologies. All rights reserved.
+ * For licensing helpdesk@platon.sk
  */
+console.log('Platon CKeditor v0.13');
 `;

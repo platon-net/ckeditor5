@@ -112,7 +112,8 @@ export default class Autoformat extends Plugin {
 		if ( commands.get( 'bold' ) ) {
 			const boldCallback = getCallbackFunctionForInlineAutoformat( this.editor, 'bold' );
 
-			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\*\*)([^*]+)(\*\*)$/g, boldCallback );
+			//inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\*\*)([^*]+)(\*\*)$/g, boldCallback );
+			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\*)([^*_]+)(\*)$/g, boldCallback );
 			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(__)([^_]+)(__)$/g, boldCallback );
 		}
 
@@ -121,14 +122,21 @@ export default class Autoformat extends Plugin {
 
 			// The italic autoformatter cannot be triggered by the bold markers, so we need to check the
 			// text before the pattern (e.g. `(?:^|[^\*])`).
-			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\*)([^*_]+)(\*)$/g, italicCallback );
+			//inlineAutoformatEditing( this.editor, this, /(?:^|\s)(\*)([^*_]+)(\*)$/g, italicCallback );
 			inlineAutoformatEditing( this.editor, this, /(?:^|\s)(_)([^_]+)(_)$/g, italicCallback );
 		}
 
 		if ( commands.get( 'code' ) ) {
 			const codeCallback = getCallbackFunctionForInlineAutoformat( this.editor, 'code' );
 
-			inlineAutoformatEditing( this.editor, this, /(`)([^`]+)(`)$/g, codeCallback );
+			//inlineAutoformatEditing( this.editor, this, /(')([^']+)(')$/g, codeCallback );
+			inlineAutoformatEditing( this.editor, this, /(\`\`)([^`]+)(\`\`)$/g, codeCallback );
+		}
+
+		if ( commands.get( 'tt' ) ) {
+			const ttCallback = getCallbackFunctionForInlineAutoformat( this.editor, 'tt' );
+
+			inlineAutoformatEditing( this.editor, this, /(`)([^`]+)(`)$/g, ttCallback );
 		}
 
 		if ( commands.get( 'strikethrough' ) ) {

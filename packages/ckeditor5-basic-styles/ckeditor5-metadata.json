@@ -39,6 +39,25 @@
 			]
 		},
 		{
+			"name": "Tt",
+			"className": "Tt",
+			"description": "Implements inline TT formatting support. It is a part of the basic text styles package.",
+			"docs": "features/basic-styles.html",
+			"path": "src/tt.js",
+			"uiComponents": [
+				{
+					"type": "Button",
+					"name": "tt",
+					"iconPath": "theme/icons/tt.svg"
+				}
+			],
+			"htmlOutput": [
+				{
+					"elements": "tt"
+				}
+			]
+		},
+		{
 			"name": "Italic",
 			"className": "Italic",
 			"description": "Implements italic formatting support. It is a part of the basic text styles package.",
