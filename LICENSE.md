@@ -3,6 +3,7 @@ Software License Agreement
 
 **CKEditor&nbsp;5** – https://github.com/ckeditor/ckeditor5 <br>
 Copyright (c) 2003–2024, [CKSource Holding sp. z o.o.](https://cksource.com) All rights reserved.
+Copyright (c) 2024, [Platon Technologies s.r.o.](https://www.platon.sk) All rights reserved.
 
 Licensed under the terms of [GNU General Public License Version 2 or later](http://www.gnu.org/licenses/gpl.html).
 
@@ -21,6 +22,7 @@ The following libraries are included in CKEditor under the [MIT license](https:/
 * Turndown - Copyright (c) 2017+ Dom Christie.
 * turndown-plugin-gfm - Copyright (c) 2017+ Dom Christie.
 * vanilla-colorful - Copyright (c) 2020 Serhii Kulykov <iamkulykov@gmail.com>.
+* TT - Copyright(c) 2024 Igor Mino <igor@platon.sk>
 
 Trademarks
 ----------

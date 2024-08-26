@@ -1,4 +1,4 @@
-CKEditor&nbsp;5 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20out%20CKEditor%205%20on%20GitHub&url=https%3A%2F%2Fgithub.com%2Fckeditor%2Fckeditor5)
+CKEditor&nbsp;5
 ===================================
 
 [![npm version](https://badge.fury.io/js/ckeditor5.svg)](https://www.npmjs.com/package/ckeditor5)
@@ -17,6 +17,7 @@ CKEditor&nbsp;5 is a modern JavaScript rich-text editor with MVC architecture, c
 
 - [CKEditor 5 ](#ckeditor5-)
 	- [Table of contents](#table-of-contents)
+	- [Platon quick start](#platon-quick-start)
 	- [Quick start](#quick-start)
 		- [CKEditor 5 Builder](#ckeditor5-builder)
 		- [TypeScript support](#typescript-support)
@@ -34,6 +35,26 @@ CKEditor&nbsp;5 is a modern JavaScript rich-text editor with MVC architecture, c
 ## Quick start
 
 Refer to the [Quick Start](https://ckeditor.com/docs/ckeditor5/latest/getting-started/installation/quick-start.html) guide to learn more about CKEditor&nbsp;5 installation.
+
+## Platon quick start
+
+First steps for build and using.
+
+### First build and install required modules
+1. Download or clone GIT repository
+2. Install `nodejs` and `npm`
+3. Choose root directory of repository and run `npm install`
+4. Choose directory `tests/browser` and run `npm install`
+5. Super, you get compiled CKeditor5 in one file `test/browser/dist/main.js`
+6. Create new HTML file and include `main.js`, for example see `test/browser/index.html`
+
+### New changes
+1. All code is in directory `packages`, it is writed in TypeScript
+2. Upgrade version of package in `package.json`
+3. After changes run in root directory `npm run build:dist`
+4. After build package choose directory `test/browser` and run `npm run build`
+5. Super, you get compiled CKeditor5 in one file `test/browser/dist/main.js`
+
 
 ### CKEditor&nbsp;5 Builder
 
