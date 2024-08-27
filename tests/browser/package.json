@@ -55,5 +55,8 @@
 		"build": "webpack --mode production",
 		"build-dev": "webpack --mode development",
 		"start": "webpack serve --open /index.html --mode development"
+	},
+	"dependencies": {
+		"@highlightjs/cdn-assets": "^11.10.0"
 	}
 }

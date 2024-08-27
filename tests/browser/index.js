@@ -243,10 +243,13 @@ class ClassCKEDITOR {
 			],
 			codeBlock: {
 				languages: [
+					{ language: 'shell', label: 'Shell' },
+					{ language: 'bash', label: 'Bash' },
+					{ language: 'yaml', label: 'Log' },
+					{ language: 'php', label: 'PHP' },
 					{ language: 'css', label: 'CSS' },
 					{ language: 'html', label: 'HTML' },
 					{ language: 'javascript', label: 'JavaScript' },
-					{ language: 'php', label: 'PHP' },
 				],
 			},
 			heading: {
