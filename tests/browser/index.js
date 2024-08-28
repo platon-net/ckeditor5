@@ -220,8 +220,8 @@ class ClassCKEDITOR {
 				'redo',
 				'|',
 				'sourceEditing',
-				'|',
-				'heading',
+				//'|',
+				//'heading',
 				'|',
 				'bold',
 				'italic',
@@ -318,4 +318,4 @@ window.CKEDITOR = new ClassCKEDITOR();
 // 	CKEDITOR.replace('#UpdateContent');
 // }
 
-console.log('ckeditor-platon version 0.13a');
+console.log('ckeditor-platon version 0.14');
