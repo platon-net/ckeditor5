@@ -245,11 +245,25 @@ class ClassCKEDITOR {
 				languages: [
 					{ language: 'shell', label: 'Shell' },
 					{ language: 'bash', label: 'Bash' },
+					{ language: 'yaml', label: 'Yaml' },
 					{ language: 'yaml', label: 'Log' },
+					{ language: 'sql', label: 'SQL' },
 					{ language: 'php', label: 'PHP' },
 					{ language: 'css', label: 'CSS' },
 					{ language: 'html', label: 'HTML' },
+					{ language: 'xml', label: 'XML' },
 					{ language: 'javascript', label: 'JavaScript' },
+					{ language: 'typescript', label: 'TypeScript' },
+					{ language: 'ini', label: 'INI' },
+					{ language: 'c', label: 'C' },
+					{ language: 'cpp', label: 'C++' },
+					{ language: 'diff', label: 'Diff' },
+					{ language: 'makefile', label: 'Makefile' },
+					{ language: 'markdown', label: 'Markdown' },
+					{ language: 'perl', label: 'Perl' },
+					{ language: 'python', label: 'Python' },
+					{ language: 'ruby', label: 'Ruby' },
+					{ language: 'rust', label: 'Rust' },
 				],
 			},
 			heading: {
@@ -318,4 +332,4 @@ window.CKEDITOR = new ClassCKEDITOR();
 // 	CKEDITOR.replace('#UpdateContent');
 // }
 
-console.log('ckeditor-platon version 0.14');
+console.log('ckeditor-platon version 0.15');
