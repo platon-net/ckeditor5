@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="content.css">
 	<link rel="stylesheet" href="demo.css">
 	<link rel="stylesheet" href="node_modules/@highlightjs/cdn-assets/styles/default.min.css">
-	<script src="node_modules/@highlightjs/cdn-assets/highlight.min.js"></script>
+	<!-- <script src="node_modules/@highlightjs/cdn-assets/highlight.min.js"></script> -->
+	 <script src="../../../highlight.js/dist/highlight.1.01.js"></script>
 </head>
 <body>
 	<h1>CKeditor5 Browser Test</h1>

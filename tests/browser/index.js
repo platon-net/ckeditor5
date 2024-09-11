@@ -247,6 +247,7 @@ class ClassCKEDITOR {
 					{ language: 'bash', label: 'Bash' },
 					{ language: 'yaml', label: 'Yaml' },
 					{ language: 'yaml', label: 'Log' },
+					{ language: 'nginx', label: 'Nginx Config' },
 					{ language: 'sql', label: 'SQL' },
 					{ language: 'php', label: 'PHP' },
 					{ language: 'css', label: 'CSS' },
@@ -332,4 +333,4 @@ window.CKEDITOR = new ClassCKEDITOR();
 // 	CKEDITOR.replace('#UpdateContent');
 // }
 
-console.log('ckeditor-platon version 0.15');
+console.log('ckeditor-platon version 0.16');
