@@ -179,7 +179,14 @@ class ClassCKEDITOR {
 		var selector = '[name="'+element_name+'"]';
 		console.log(selector);
 		var element = document.querySelector(selector);
-		console.log(element);
+		if (element == null) {
+			selector = '#'+element_name;
+			element = document.querySelector(selector);
+		}
+		if (element == null) {
+			console.error('CKEDITO5: Element with selector "'+element_name+'" not found');
+			return false;
+		}
 		ClassicEditor.create(element, {
 			plugins: [
 				Autoformat,
@@ -320,7 +327,7 @@ class ClassCKEDITOR {
 			window.CKEDITOR.instances.push(editor);
 		})
 		.catch((error) => {
-			console.error('ERROR: ckeditor-platon')
+			console.error('ERROR: ckeditor5-platon')
 			console.error(error);
 		});
 	}
@@ -333,4 +340,4 @@ window.CKEDITOR = new ClassCKEDITOR();
 // 	CKEDITOR.replace('#UpdateContent');
 // }
 
-console.log('ckeditor-platon version 0.16');
+window.CKEDITOR_BUIILD = '0.17';
